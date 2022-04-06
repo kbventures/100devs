@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/06css.css">
+</head>
+<body>
+
+    <div class="static">
+        static is the default value. An element with position: static; is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned.
+    </div>
+    <div class="relative1">
+        relative 1: relative behaves the same as static unless you add some extra properties.
+    </div>
+    <div class="relative2">
+        relataive 2: Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+    </div>
+    <div class="fixed">
+        Hello! Don't pay attention to me yet.
+    </div>
+    <div>
+        fixed
+<div class="fixed">
+Hello! Don't pay attention to me yet.
+
+</div>
+A fixed element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. As with relative, the top, right, bottom, and left properties are used.
+
+I'm sure you've noticed that fixed element in the lower-right hand corner of the page. I'm giving you permission to pay attention to it now. Here is the CSS that puts it there:
+A fixed element does not leave a gap in the page where it would normally have been located    
+</div>
+
+<div>
+    absolute
+absolute is the trickiest position value. absolute behaves like fixed except relative to the nearest positioned ancestor instead of relative to the viewport. If an absolutely-positioned element has no positioned ancestors, it uses the document body, and still moves along with page scrolling. Remember, a "positioned" element is one whose position is anything except static.
+</div>
+<div class="relative">
+    <code>&#60;section&#62; <br> position: relative;</code>
+      
+        <div class="offset">
+          <code>&#60;div class="offset"&#62; <br> position: absolute;  <br> right: 20px; <br> top: 20px;</code>
+        </div>
+    This element is relatively-positioned. If this element was position: static; its absolutely-positioned child would escape and would be positioned relative to the document body.
+    <div class="absolute">
+        This element is absolutely-positioned. It's positioned relative to its parent.
+    </div>
+</div>
+</body>
+</html>

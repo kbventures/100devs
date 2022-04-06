@@ -1,0 +1,17 @@
+
+
+.simple {
+    width: 500px;
+    margin: 20px auto;
+    border: red 10px solid ;
+
+  }
+  
+  .fancy {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    /* border-width: 10px; */
+    border: red 10px solid ;
+  }
+
