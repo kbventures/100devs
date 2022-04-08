@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/07css.css">
+</head>
+<body>
+    <div>
+        <p>
+            This position stuff might make a little more sense in a practical example. Below is a realistic page layout.
+        </p>
+        <p>
+            .container {
+                position: relative;
+              }
+              <br>
+              nav {
+                position: absolute;
+                left: 0px;
+                width: 200px;
+              }
+              <br>
+              section {
+                /* position is static by default */
+                margin-left: 200px;
+              }
+              <br>
+              footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                height: 70px;
+                background-color: white;
+                width: 100%;
+              }
+              <br>
+              body {
+                margin-bottom: 120px;
+              }
+        </p>
+    </div>
+
+    <div class="container">
+        <code>&#60;div class="container" &#62;</code>
+        <nav>
+            <code>&#60;nav&#62;</code>
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </ul>
+            <code>&#60;&sol;nav&#62;</code>
+        </nav>
+        <section>
+            The margin-left style for sections makes sure there is room for the nav. Otherwise the absolute and static elements would overlap
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam v
+        </section>
+        <section>
+            Notice what happens when you resize your browser. It works nicely!
+        </section>
+        <code>&#60;&sol;div&#62;</code>
+    </div>
+
+    <footer>
+        <code>&#60;footer&#62;</code>
+        If you use a fixed header or footer, make sure there is room for it! I put a margin-bottom on the body.
+        <code>&#60;&sol;footer&#62;</code>
+    </footer>
+</body>
+</html>
+

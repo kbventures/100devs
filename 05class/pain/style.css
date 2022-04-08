@@ -10,7 +10,15 @@ header, footer{
 
 }
 
-section{
+section {
+    height: 300px;
+    float: left;
+    width: 33.3333%;
+    border: black 1px inset; 
+
+}
+
+ section{
     height: 300px;
     float: left;
     width: 33.3333%;
