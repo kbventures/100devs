@@ -7,14 +7,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/05css.css">
 </head>
-<body id="main">
+<body>
+    <p>
+        The original box model behavior was eventually considered unintuitive, so a new CSS property called box-sizing was created. When you set box-sizing: border-box; on an element, the padding and border of that element no longer increase its width. Here is the same example as the previous page, but with box-sizing: border-box; on both elements:
+    </p>
     <p>When you set box-sizing: border-box; on an element, the padding and border of that element no longer increase its width. Here is the same example as the previous page, but with box-sizing: border-box; on both elements:</p>
-    <div class="simple">I'm smaller... width 500px margin 20px border 10px</div>
-    <div class="fancy">
-        And I'm bigger! Width 500px Margin 20px Padding 50px Border 10Px
+    <code>
+        .simple {
+            width: 500px;
+            margin: 20px auto;
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+          }
+    </code>
+    <br>
+    <br>
+    <code>
+        .fancy {
+            width: 500px;
+            margin: 20px auto;
+            padding: 50px;
+            border: solid blue 10px;
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+          }
+    </code>
+    
+    <div class="simple"><code>&#60;div class="simple"&#62;</code>I'm smaller... width 500px margin 20px border 10px<code>&#60;&sol;div&#62;</code></div>
+    <div class="fancy"><code>&#60;div class="fancy"&#62;</code>
+        And I'm bigger! Width 500px Margin 20px Padding 50px Border 10Px<code>&#60;&sol;div&#62;</code>
     </div>
     <div>  Since this is so much better, some authors want all elements on all their pages to always work this way.
         Such authors put the following CSS on their pages:
+        <br>
         
       
         * {
@@ -22,5 +49,12 @@
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
       }</div>
+
+      <p>
+        This ensures that all elements are always sized in this more intuitive way.
+
+Since box-sizing is pretty new, you should use the -webkit- and -moz- prefixes for now, as I have in these examples. This technique enables experimental features in specific browsers. Also, keep in mind that this one is IE8+.          
+
+      </p>
 </body>
 </html>

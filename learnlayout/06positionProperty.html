@@ -8,15 +8,44 @@
     <link rel="stylesheet" href="css/06css.css">
 </head>
 <body>
+    <code>&#60;&sol;div&#62;</code>
+    <p>
+        In order to make more complex layouts, we need to discuss the position property. It has a bunch of possible values, and their names make no sense and are impossible to remember. Let's go through them one by one, but maybe you should bookmark this page too.
+    </p>
 
+    <p>
+        .static {
+          position: static;
+        }</p>
     <div class="static">
+        <code>&#60;div class="static"&#62;</code>
         static is the default value. An element with position: static; is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned.
+        <code>&#60;&sol;div&#62;</code>
+
     </div>
+
+    <p>
+        .relative1 {
+            position: relative;
+          }
+          .relative2 {
+            position: relative;
+            top: -20px;
+            left: 20px;
+            background-color: white;
+            width: 500px;
+          }
+    </p>
     <div class="relative1">
+        <code>&#60;div class="relative1"&#62;</code>
         relative 1: relative behaves the same as static unless you add some extra properties.
+        <code>&#60;&sol;div&#62;</code>
+
     </div>
     <div class="relative2">
+        <code>&#60;div class="relative2"&#62;</code>
         relataive 2: Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        <code>&#60;&sol;div&#62;</code>
     </div>
     <div class="fixed">
         Hello! Don't pay attention to me yet.
