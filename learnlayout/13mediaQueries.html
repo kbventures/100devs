@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/13css.css">
+</head>
+<body class="container">
+    <div>
+        <h1>
+            Media Queries
+        </h1>
+        <p>
+            "Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what.
+        </p>
+        <br>
+        <p>
+            Media queries are the most powerful tool for doing this. Let's take our layout that uses percent widths and have it display in one column when the browser is too small to fit the menu in the sidebar:
+        </p>
+        <br>
+        <p>
+            @media screen and (min-width:600px) {
+                nav {
+                  float: left;
+                  width: 25%;
+                }
+                section {
+                  margin-left: 25%;
+                }
+              }
+        </p>
+        <br>
+        <p>
+            @media screen and (max-width:599px) {
+                nav li {
+                  display: inline;
+                }
+              }
+        </p>
+    </div>
+
+    <code>&#60;div class="container" &#62;</code>
+    <div class="clearfix">
+        <nav>
+            <code>&#60;nav&#62;</code>
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </ul>
+            <code>&#60;&sol;nav&#62;</code>
+        </nav>
+        <section>
+            <code>&#60;section&#62;</code>
+            Now when you resize your browser it's even cooler than ever!
+            <code>&#60;&sol;section&#62;</code>
+        </section>
+        <section>
+            <code>&#60;section&#62;</code>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam v
+            <code>&#60;&sol;section&#62;</code>
+        </section>
+        <section>
+            <code>&#60;section&#62;</code>
+            Notice what happens when you resize your browser. It works nicely!
+            <code>&#60;&sol;section&#62;</code>
+        </section>
+    </div>
+    <code>&#60;&sol;div" &#62;</code>
+
+
+    
+</body>
+</html>

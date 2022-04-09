@@ -1,0 +1,16 @@
+* {box-sizing: border-box;}
+
+
+img {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  section{
+    border:solid 1px orange;
+  }

@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+
+article img {
+    float: right;
+    width: 50%;
+  }
+
+  article{
+      border: solid 1px orange; 
+  }
+  
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+
+    nav {
+        float: left;
+        width: 25%;
+      }
+      section {
+        margin-left: 25%;
+      }      
+  

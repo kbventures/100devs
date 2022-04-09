@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/10css.css">
+</head>
+<body class="container">
+    <p>img {
+        float: right;
+      }</p>
+    <div>
+        <img src="ilta.png" alt="">
+        <p>
+            Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!
+        </p>
+    </div>
+    <p>Boo. There is a way to fix this, but it's ugly. It's called the clearfix hack.
+</p>
+<p>
+    Let's try adding this new CSS:
+</p>
+<p>
+    .clearfix {
+        overflow: auto;
+      }
+</p>
+<p>Now let's see what happens:</p>
+
+<div class="clearfix">
+    <img src="ilta.png" alt="">
+    <p>
+        Much better!
+    </p>
+</div>
+<p>
+    This works for modern browsers. If you want to support IE6 you will want to add the following:
+</p>
+<p>
+    .clearfix {
+        overflow: auto;
+        zoom: 1;
+      }
+</p>
+    
+</body>
+</html>

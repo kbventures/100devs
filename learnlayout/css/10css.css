@@ -1,0 +1,16 @@
+div{
+    border: 1px green solid
+}
+
+img {
+    float: right;
+  }
+
+  .container{
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+
+  .clearfix {
+    overflow: auto;
+  }

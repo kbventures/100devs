@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/17css.css">
+</head>
+<body>
+    <div>
+        <h1>
+            Flexbox
+        </h1>
+
+        <p>
+            The new flexbox layout mode is poised to redefine how we do layouts in CSS. Unfortunately the specification has changed a lot recently, so it's implemented differently in different browsers. Still, I'd like to share a couple examples so you know what's coming up. These examples currently only work some browsers that use the latest version of the standard.       
+         </p>
+        <br>
+        <p>
+            There are a lot of out-of-date flexbox resources around. If you want to learn more about flexbox, start here to learn how to identify if a resource is current or not. I have written a detailed article using the latest syntax.
+        </p>
+        <p>
+            There is a lot more you can do with flexbox; these are just a few examples to give you an idea:        <br>
+        </p>
+        <br>
+        <h2>Simple Layout using Flexbox
+        </h2>
+        <p>
+            .container {
+                display: -webkit-flex;
+                display: flex;
+              }
+        </p>
+        <br>
+        <p>nav {
+            width: 200px;
+          }</p>
+          <br>
+          <p>.flex-column {
+            -webkit-flex: 1;
+                    flex: 1;
+          }</p>
+    </div>
+    
+    <code>&#60;div class="container"&#62;</code>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="flex-column">
+            <section>
+                <code>&#60;section&#62;</code>
+                Tada!
+                <code>&#60;&sol;section&#62;</code>
+            </section>
+            <section>
+                <code>&#60;section&#62;</code>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam v
+                <code>&#60;&sol;section&#62;</code>
+            </section>
+        </div>
+    </div>   
+    <code>&#60;&sol;div&#62;</code>
+    <br>
+    <h2>Fancy Layout Using Flexbox</h2>
+    <br>
+    <p>
+        .container {
+            display: -webkit-flex;
+            display: flex;
+          }
+    </p>
+    <br>
+    <br>
+    <p>
+        .initial {
+            -webkit-flex: initial;
+                    flex: initial;
+            width: 200px;
+            min-width: 100px;
+          }
+    </p>
+    <br>
+    <br>
+    <p>
+        .none {
+            -webkit-flex: none;
+                    flex: none;
+            width: 200px;
+          }
+    </p>
+    <br>
+    <br>
+    <p>
+        .flex1 {
+            -webkit-flex: 1;
+                    flex: 1;
+          }
+    </p>
+    <br>
+    <br>
+    <p>
+        .flex2 {
+            -webkit-flex: 2;
+                    flex: 2;
+          }
+    </p>
+    <br>
+    <code>&#60;div class="container"&#62;</code>
+    <div class="container">
+        <div class="initial">I will be 200px when there is room, and I will shrink down to 100px if there is not room, but no smaller.</div>
+        <div class="none">
+            I will be 200px when there is room, and I will shrink down to 100px if there is not room, but no smaller.
+        </div>
+        <div class="flex1">
+            I will fill up 1/3 of the remaining width
+        </div>
+        <div class="flex2">
+            I will fill up 2/3 of the remaining width
+        </div>
+    </div>
+    <code>&#60;&sol;div&#62;</code>
+    <br>
+    <h2>Centering Using Flexbox</h2>
+    <br>
+    <p>
+        .vertical-container {
+            height: 300px;
+            display: -webkit-flex;
+            display:         flex;
+            -webkit-align-items: center;
+                    align-items: center;
+            -webkit-justify-content: center;
+                    justify-content: center;
+          }
+    </p>
+    <br>
+    <code>&#60;div class="vertical-container"&#62;</code>
+    <div class="vertical-container">
+        <div>Finally, it's easy to vertically center something in CSS!</div>
+    </div>
+    <code>&#60;&sol;div&#62;</code>
+</body>
+</html>

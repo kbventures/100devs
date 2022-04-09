@@ -1,0 +1,19 @@
+
+
+  .container{
+    max-width: 600px;
+    margin: 0 auto; 
+  }
+
+  nav {
+    float: left;
+    width: 200px;
+    border: solid 1px red; 
+  }
+  section {
+    margin-left: 200px;
+    border: solid 1px orange; 
+  }
+  div{
+      border: solid 1px green; 
+  }

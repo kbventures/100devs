@@ -1,0 +1,45 @@
+
+*{box-sizing: border-box;}
+
+  .container {
+    border: 1px green solid;
+    display: flex;
+  }
+  nav {
+    width: 200px;
+    border: 1px red solid;
+  }
+  .flex-column {
+            flex: 1;
+  }
+
+
+  .initial {
+    width: 200px;
+    min-width: 100px;
+  }
+  .none {
+    width: 200px;
+  }
+  .flex1 {
+    -webkit-flex: 1;
+            flex: 1;
+  }
+  .flex2 {
+    -webkit-flex: 2;
+            flex: 2;
+  }
+
+
+
+
+
+  .vertical-container 
+  {
+    border: orange 1px solid; 
+    height: 300px;
+    display: -webkit-flex;
+    display:         flex;
+    align-items: center;
+    justify-content: center;
+  }
