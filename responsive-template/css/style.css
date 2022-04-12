@@ -1,0 +1,94 @@
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer{
+     height: 5rem;
+     border: black 0.1rem inset; 
+     clear: left; 
+ 
+ }
+
+ @media only screen and (min-width: 37.5em) {
+     header, footer{
+          height: 20rem;
+          border: black 0.1rem inset; 
+          clear: left; 
+      }
+}
+
+
+
+ @media only screen and (min-width: 112.5em) {
+     header, footer{
+          height: 15rem;
+          border: black 0.1rem inset; 
+          clear: left; 
+      }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ section {
+     height: 25rem;
+     /* float: left; */
+     width: 100%;
+     border: black 0.1rem inset; 
+ }
+
+
+ 
+@media only screen and (min-width: 37.5em) {
+     section {
+          height: 50rem;
+          float: left;
+          width: 33%;
+          border: black 0.1rem inset; 
+      
+      }
+}
+
+
+@media only screen and (min-width: 112.5em) {
+     section {
+          height: 60rem;
+          float: left;
+          width: 33.1111%;
+          border: black 0.1rem inset; 
+      
+      }
+}
+ 
