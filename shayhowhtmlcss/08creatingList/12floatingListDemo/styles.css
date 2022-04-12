@@ -1,0 +1,7 @@
+ul {
+    list-style: disc;
+  }
+  li {
+    float: left;
+    margin: 0 20px;
+  }
