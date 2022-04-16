@@ -34,61 +34,65 @@ html {
 /* LAYOUT
 /*******************************************/
 header, footer{
-     height: 5rem;
+     height: 6rem;
      border: black 0.1rem inset; 
      clear: left; 
  
  }
 
  @media only screen and (min-width: 37.5em) {
-     header, footer{
-          height: 20rem;
-          border: black 0.1rem inset; 
-          clear: left; 
-      }
-}
+     header,footer{
+          height: 11.5rem;
+     }
+} 
 
 
-
- @media only screen and (min-width: 112.5em) {
-     header, footer{
-          height: 15rem;
-          border: black 0.1rem inset; 
-          clear: left; 
-      }
-}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+     section {
+          height: 11.5rem;
+          width: 100%;
+          border: black 0.1rem inset; 
+          background-color: red;
+     }
 
- section {
-     height: 25rem;
-     /* float: left; */
-     width: 100%;
-     border: black 0.1rem inset; 
- }
 
-
+     @media only screen and (min-width: 37.5em) {
+          section {
+               float: left;
+               width: 33%;
+               background-color: green;
+               height: 70rem;
+           }
+     } 
+         /* 900px */
+     @media only screen and (min-width: 56.25em) {
+          section{
+               background-color: blue;
+          }
+          
+     }  
  
-@media only screen and (min-width: 37.5em) {
-     section {
-          height: 50rem;
-          float: left;
-          width: 33%;
-          border: black 0.1rem inset; 
-      
-      }
-}
+         /* 1200px */
+     @media only screen and (min-width: 75em) {
+          section{
+               background-color: cyan;
+          }
+     }
+ 
+   
+        /* 1800 px */
+     @media only screen and (min-width: 112.5em) {
+          section{
+               background-color: black;
+          }
+  
+     }
 
 
-@media only screen and (min-width: 112.5em) {
-     section {
-          height: 60rem;
-          float: left;
-          width: 33.1111%;
-          border: black 0.1rem inset; 
-      
-      }
-}
+
+
+
  
