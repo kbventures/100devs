@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root{
+     --light-gray: #dbdfe2;
+     --dark-gray: #979797;
+     --gray-blue: #66768a;
+     --dark-blue: #161f2a;
+};
+
+
+html {
+     font-size: 62.5%;
+}
+
+body{
+     box-sizing: border-box;
+     line-height: 1.3;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* NAVIGATION & HAMBURGER ICON
+/*******************************************/
+
+.hamburger i{
+     float: right; 
+     color: var(--light-gray); 
+     margin: 1rem;
+}
+
+.hamburger img{
+     height: 2rem;
+     position: absolute;
+     margin:1.5rem; 
+     top: 0;
+     left: 44%;
+     transform: translate(-50%, -50%);
+}
+.hamburger{
+     height: 3rem;;
+     background-color: var(--gray-blue);
+}
+
+nav{
+     display: none;
+}
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+
+
+
+header{
+
+     /* background-color: var(--gray-blue); */
+     color: var(--dark-blue);
+     text-align: center;
+     padding: 0 1.5rem; 
+     height: 100vh;
+     margin-top: -3rem; 
+}
+
+
+header::before {    
+     content: "";
+     background-image: url(download.jpeg);
+     background-size: cover;
+     position: absolute;
+     top: 3rem;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+     opacity: 0.2;
+}
+
+header h1{
+     padding: 35% 15% 10% 15%;
+}
+
+header p + p{
+     padding: 1rem 0;
+}
+
+header p + p i{
+     margin-right: 0.35rem;
+}
+
+
+
+/******************************************
+/* SECTION WHY
+/*******************************************/
+
+header + section {
+     text-align: center;
+     padding: 0 1.5rem;
+}
+
+header + section h2 {
+     padding: 15% 15% 10% 15%;
+}
+
+header + section p {
+     padding-bottom: 15%;
+}
+
+
+/******************************************
+/* SECTION INFORMATION
+/*******************************************/
+
+.information {
+     text-align: center;
+     padding: 2rem 1.5rem;
+     background-color: var(--dark-gray);
+}
+
+
+.information img{
+     margin-top: 1.5rem; 
+     padding: 0% 0% 10% 0%;
+}
+
+.information h2 {
+     padding-top: 2rem;
+}
+
+.information p {
+     padding: 0.75rem 0;
+     margin-bottom: 1rem; ;
+}
+
+.information a { 
+     padding: 0.75rem 0.75rem;
+     border: solid 1px black;
+     text-decoration: none;
+     color: black; 
+}
+
+
+/******************************************
+/* SECTION VOLUNTEER
+/*******************************************/
+
+.volunteer {
+     text-align: center;
+     padding: 0 1.5rem;
+}
+
+.volunteer h2 {
+     padding: 15% 15% 10% 15%;
+}
+
+.volunteer p {
+     padding-bottom: 15%;
+}
+
+.volunteer a {
+     padding: 0.75rem 0.75rem;
+     text-decoration: none;
+     color: black;
+     border: solid black 1px;
+}
+
+
+
+/******************************************
+/* Footer
+/*******************************************/
+
+footer{
+     margin-top: 3rem; 
+     padding-top: 2rem; 
+     color: var(--light-gray);
+     background-color: var(--dark-blue);
+   
+}
+footer section {
+     text-align: left; 
+     text-align: center;
+     padding: 0 3rem; 
+  }
+
+footer div a {
+     text-decoration: none;
+     color: var(--light-gray)
+
+}
+
+footer i:nth-of-type(2){
+     padding: 1rem; 
+}
+
+footer div{
+     padding-bottom: 1rem; ;
+}
+
+footer div a:nth-of-type(1){
+     padding-right: 1rem; ;
+}
+
+footer section + section {
+     margin-top: 2rem; 
+}
+
+footer section + section + section {
+     padding: 2rem; 
+     border-top: 2px solid gray;
+}
+
+footer section + section > h5{
+     padding-bottom: 0.5rem;
+}
+
+
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+h1, h2,h3,h5{
+     font-weight: bold;
+}
+
+h1{
+     font-size: 1.6rem;
+}
+
+h2,h3{
+     font-size: 1.3rem;
+}
+
+p{
+     font-size: 1.1rem;
+}
+
+h5{
+color: var(--gray-blue);
+
+}
+
+/******************************************
+/* Media Query Manager
+/*******************************************/
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+
+
+     /* 360 */
+     @media only screen and (min-width: 22.5em) {
+          header h1{
+               padding: 65% 15% 10% 15%;
+          }     
+     
+     }
+
+      /* 600px */
+      @media only screen and (min-width: 37.5em) {
+
+          
+          h1{
+               font-size: 2rem;
+          }
+          
+          h2,h3{
+               font-size: 1.7rem;
+          }
+          
+          p{
+               font-size: 1.5rem;
+          }
+          
+           
+     } 
+         /* 900px */
+     @media only screen and (min-width: 56.25em) {
+          
+          /* h1{
+               font-size: 4rem;
+          }
+          
+          h2,h3{
+               font-size: 2.2rem;
+          }
+          
+          p{
+               font-size: 1.8rem;
+          } */
+
+          .hamburger{display:none;}
+
+          nav{display: block;}
+
+     }  
+
+         /* 1200px */
+     @media only screen and (min-width: 68.75em) {
+
+     }
+ 
+   
+        /* 1800 px */
+     @media only screen and (min-width: 112.5em) {
+          
+  
+     }
+
+
+
+
+
+     
+
+
+
+
+ 

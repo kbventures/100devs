@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%
+}
+
+body{
+     box-sizing: border-box;
+     line-height: 1;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* I got it. I took a look at your glitch code. Add "display: block;" to [nav ul] selector.
+ Add "display: inline;" to [nav ul li] selector. Add "line-height: 50px;" to [nav *] selector.
+  Add "text-align: center;" to [header] selector. Add "line-height: 30px;" and "margin-top: 8px;" 
+  to [nav form input]. */
+
+
+
+  header, main ,.container, aside{
+       display: block; 
+  }
+
+header{
+     height: 7rem;
+     color: black; 
+     position: fixed;
+     top: 0;
+     left:0;
+     width: 100%;
+
+}
+
+
+header> nav   {
+     display: none; 
+}
+
+nav * {
+     line-height: 5rem;
+}
+
+
+header > .main-logo {
+     position: absolute;
+     top: 2rem;
+     left: 2rem; 
+     color: green; 
+}
+
+header > .hamburger {
+     color: green; 
+     position: absolute;
+     top: 2rem; 
+     right: 2rem;
+}
+
+
+.container{
+     padding: 3rem 2.5rem;
+     width: 100%;
+}
+
+
+main {
+     margin-top: 7rem;
+     
+}
+
+main h1 {
+     font-size: 2.8rem;
+     font-weight: Bold;
+     margin-bottom: 0.8rem;
+}
+
+main p {
+     font-size: 1.8rem;
+     font-weight: bold;
+}
+
+main p span  {
+     font-size: 1.3rem;
+
+}
+
+main p{
+     margin: 0.8rem 0;
+}
+
+main p + img 
+{
+     width: 100%;
+}
+
+
+
+
+aside section > h2 {
+     font-size: 1.8rem;
+     font-weight: bold;
+     padding: 2rem 2rem; 
+}
+
+aside section > p {
+     font-size: 1.3rem;
+     border-bottom: 0.1rem rgba(128, 128, 128, 0.309) solid;
+     padding-bottom: 1rem;
+     padding-left: 2rem;
+     font-weight: bold;
+}
+
+
+
+
+.secondary h4 {
+     font-size: 1.8rem;
+     font-weight: bold;
+     margin: 1.5rem 0; 
+     border-bottom: 0.1rem rgba(128, 128, 128, 0.309) solid;
+     padding-bottom: 1.3rem;
+}
+
+.secondary h2 {
+     font-size: 2.2rem;
+     font-weight: bold;
+}
+
+.secondary p {
+          font-size: 1.3rem;
+          font-weight: bold;
+          padding: 1rem 0;
+}
+
+
+
+
+.secondary p + p {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+
+.secondary section > section {
+     float: left; 
+     width: 65%;
+}
+
+.secondary section > img{
+     float: left;
+     width: 35%;
+}
+
+.secondary h2 + p {
+     display: none; 
+}
+
+.secondary section + p {
+     display: none; 
+}
+
+
+.secondary h2+ p + p +p  {
+  font-weight: 400;
+  color: rgba(7, 7, 7, 0.309);
+}
+
+
+
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+     /* MEDIA QUERY MANAGER */
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+
+
+
+      /* 600px */
+      @media only screen and (min-width: 37.5em) {
+
+          main{
+               float: left; 
+               width: 65%;
+          }
+
+
+          main h1 {
+              font-size: 3.6rem;
+              font-weight: Bold;
+              margin-bottom: 0.8rem;
+         }
+          aside{
+               float: left; 
+               width: 35%;
+               margin-top: 4.6rem;
+          }
+          
+     } 
+         /* 900px */
+     @media only screen and (min-width: 56.25em) {
+
+
+          .secondary section + p {
+               display: block; 
+               color: rgba(7, 7, 7, 0.309);
+               padding: 0 2rem;
+
+          }
+
+          .secondary section > section, .secondary section + p, .secondary section img {
+               float: left; 
+               width: 33%;
+          }
+          
+          .container{
+               padding: 3rem 2.5rem;
+               width: 70%;
+          }
+
+     }  
+
+ 
+         /* 1200px */
+     @media only screen and (min-width: 68.75em) {
+
+
+          header > .hamburger {
+               display: none; 
+          }
+          
+          header> nav  {
+               display: block; 
+               color: rgba(7, 7, 7, 0.309);
+
+
+          }
+
+          header * {
+               display: block;
+          }
+
+          header {
+               /* display: fixed; */
+               width: 15%;
+               font-size: 2.2rem;
+               font-weight: bold;
+          }
+
+          .container{
+               float: left;
+               margin-left: 20%; 
+          }
+
+          header > .main-logo {
+               position: static;
+          }
+          .container{
+               width: 50%;
+          }
+
+          header nav form {
+               background-color: none;
+          }
+
+          header nav a{
+               text-decoration: none;
+               color: rgba(7, 7, 7, 0.309);
+
+          }
+
+          header> nav{
+               padding: 2rem;
+
+          }
+     }
+ 
+   
+        /* 1800 px */
+     @media only screen and (min-width: 112.5em) {
+          
+  
+     }
+
+
+
+
+
+     
+
+
+
+
+ 

@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: inherit;
+} 
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%;
+}
+
+body{
+     box-sizing: border-box;
+     line-height: 1.5;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header nav > * {
+     float: left; 
+     width: 20%;
+}
+
+header ul > li {
+     float: left;
+     width: 33%;
+}
+
+header {
+     margin: 1% 0;
+     position: relative;
+     left: 12.4%;
+}
+
+main > section{
+     width: 50%;
+     height: 600px;
+     float: left; 
+}
+
+
+
+
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+     /* MEDIA QUERY MANAGER */
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+
+
+
+      /* 600px */
+      @media only screen and (min-width: 37.5em) {
+          
+     } 
+         /* 900px */
+     @media only screen and (min-width: 56.25em) {
+
+
+     }  
+
+ 
+         /* 1200px */
+     @media only screen and (min-width: 68.75em) {
+
+     }
+ 
+   
+        /* 1800 px */
+     @media only screen and (min-width: 112.5em) {
+          
+  
+     }
+
+
+
+
+
+     
+
+
+
+
+ 
