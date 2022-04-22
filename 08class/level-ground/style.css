@@ -134,38 +134,26 @@ nav{
 
 
 
-header{
+main{
 
-     /* background-color: var(--gray-blue); */
-     color: var(--dark-blue);
+     background-color: var(--gray-blue);
+     color: var(--light-gray);
      text-align: center;
-     padding: 0 1.5rem; 
-     height: 100vh;
-     margin-top: -3rem; 
+     padding: 0 2.5rem; 
+     height: 30rem;
+
 }
 
 
-header::before {    
-     content: "";
-     background-image: url(download.jpeg);
-     background-size: cover;
-     position: absolute;
-     top: 3rem;
-     right: 0px;
-     bottom: 0px;
-     left: 0px;
-     opacity: 0.2;
+main h1{
+     padding: 2rem;
 }
 
-header h1{
-     padding: 35% 15% 10% 15%;
-}
-
-header p + p{
+main p + p{
      padding: 1rem 0;
 }
 
-header p + p i{
+main p + p i{
      margin-right: 0.35rem;
 }
 
@@ -175,17 +163,17 @@ header p + p i{
 /* SECTION WHY
 /*******************************************/
 
-header + section {
+main + section {
      text-align: center;
-     padding: 0 1.5rem;
+     padding: 0 2.5rem;
 }
 
-header + section h2 {
-     padding: 15% 15% 10% 15%;
+main + section h2 {
+     padding: 2rem;
 }
 
-header + section p {
-     padding-bottom: 15%;
+main + section p {
+     padding-bottom: 2.5rem;
 }
 
 
@@ -195,14 +183,14 @@ header + section p {
 
 .information {
      text-align: center;
-     padding: 2rem 1.5rem;
+     padding: 2rem 2.5rem;
      background-color: var(--dark-gray);
 }
 
 
 .information img{
      margin-top: 1.5rem; 
-     padding: 0% 0% 10% 0%;
+     padding-bottom: 1rem; 
 }
 
 .information h2 {
@@ -226,17 +214,19 @@ header + section p {
 /* SECTION VOLUNTEER
 /*******************************************/
 
+
+
 .volunteer {
      text-align: center;
-     padding: 0 1.5rem;
+     padding: 0 2.5rem;
 }
 
 .volunteer h2 {
-     padding: 15% 15% 10% 15%;
+     padding: 2rem;
 }
 
 .volunteer p {
-     padding-bottom: 15%;
+     padding-bottom: 2.5rem;
 }
 
 .volunteer a {
@@ -358,15 +348,18 @@ Ems are the best option for media queries
 
      /* 360 */
      @media only screen and (min-width: 22.5em) {
-          header h1{
-               padding: 65% 15% 10% 15%;
-          }     
+          main{
+               height: 35rem;
+          }
+          
+          main h1{
+               padding: 5rem;
+          }
      
      }
 
       /* 600px */
       @media only screen and (min-width: 37.5em) {
-
           
           h1{
                font-size: 2rem;
@@ -379,14 +372,45 @@ Ems are the best option for media queries
           p{
                font-size: 1.5rem;
           }
+
+          .information a{
+               font-size: 1.5rem;
+
+          }
+
+          .volunteer a{
+               font-size: 1.5rem;
+          }
+
+          footer div a{
+               font-size: 1.5rem;
+          }
+
+          .hamburger img, .hamburger i{
+               height: 3rem;
+               margin:2.5rem; 
+          }
+
+          footer i{
+               font-size: 1.5rem;
+          }
           
-           
-     } 
+
+          footer h5{
+               font-size: 1.7rem;
+          }
+
+     }
+
          /* 900px */
      @media only screen and (min-width: 56.25em) {
           
-          /* h1{
-               font-size: 4rem;
+
+          main h1{
+               padding-top: 9rem;
+          }
+          h1{
+               font-size: 2.5rem;
           }
           
           h2,h3{
@@ -395,16 +419,92 @@ Ems are the best option for media queries
           
           p{
                font-size: 1.8rem;
-          } */
+          }
 
           .hamburger{display:none;}
 
-          nav{display: block;}
+          nav{
+               display:block;
+               text-align: center;
+               background-color: var(--gray-blue);
+               
+          }
+
+          nav img {
+               position: absolute;
+               left: 50%;
+               margin-left: -50px !important;  /* 50% of your logo width */
+               display: block;
+          }
+    
+
+          nav a{
+               text-decoration: none;
+               color: var(--light-gray);
+               float: right; 
+               padding: 1.5rem 0;
+               padding-right: 1.5rem;
+          }
+
+          nav div a{
+               float: left; 
+               padding: 1.5rem 0;
+               padding-left: 2rem;
+          }
+
+
+
+          .information a{
+               font-size: 1.8rem;
+
+          }
+
+          .volunteer a{
+               font-size: 1.8rem;
+          }
+
+          footer div a{
+               font-size: 1.8rem;
+          }
+
+          .hamburger img, .hamburger i{
+               height: 3rem;
+               margin:2.5rem; 
+          }
+
+          footer{
+               padding: 0 2rem; 
+          }
+
+          
+          footer i{
+               font-size: 1.8rem;
+          }
+
+
+          footer .split1{
+               width:40%;
+               float: left; 
+               text-align: left;
+          }
+
+          .split2{
+               float: right;
+               width:40%;
+               margin-top: 0;
+               margin-bottom: 2rem; 
+               text-align: left;
+          }
 
      }  
 
          /* 1200px */
      @media only screen and (min-width: 68.75em) {
+          .information section{
+               width: 50%;
+               float: right;
+               background-color: var(--dark-gray);
+          }
 
      }
  
