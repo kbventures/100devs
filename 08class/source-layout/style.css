@@ -1,0 +1,575 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root{
+     --light-gray: #f2f5f8;
+     --medium-gray: #dee3e9;
+     --gray: #ced3d8;
+     --dark-blue: #3e4f5d;
+     --dark-grey: #aab3ba;
+};
+
+
+html {
+     font-size: 62.5%;
+}
+
+body{
+     box-sizing: border-box;
+     line-height: 1;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* NAVIGATION & HAMBURGER ICON
+/*******************************************/
+
+
+.desktop{
+     display: none; 
+}
+
+
+.mobile{
+     height: 3rem; 
+     background-color: var(--light-gray);
+     border-bottom: 1px solid var(--dark-grey);
+}
+
+.mobile i{
+     padding: 0.65rem 0 0 1.5rem;
+     float: left;
+}
+
+.mobile p{
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, 0);
+     padding-top: 0.40rem;  
+}
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+
+main{
+     background-color: var(--light-gray);
+     height: 25rem;
+     width: 100%;
+     padding: 0 1rem 0 1rem;
+}
+
+main section{
+     display:block;
+     margin: 0 auto;
+    
+}
+
+main input {
+     display: block;
+     width: 100%;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+.mobile p, .desktop p, .mobile i{
+     font-size: 1.5rem;
+}
+
+
+
+.mobile p, .desktop p, .mobile i, .desktop i{
+     font-weight: bold;
+     color: var(--dark-blue)
+}
+
+main h2{
+     font-size: 2rem;
+     color:var(--dark-blue);
+     /* text-align: left;  */
+}
+
+main a {
+     text-decoration: none;
+}
+
+/* h1, h2,h3,h5{
+     font-weight: bold;
+}
+
+h1{
+     font-size: 1.6rem;
+}
+
+h2,h3{
+     font-size: 1.3rem;
+}
+
+p{
+     font-size: 1.1rem;
+}
+
+h5{
+color: var(--gray-blue);
+
+} */
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+
+
+/* 
+main{
+
+     background-color: var(--gray-blue);
+     color: var(--light-gray);
+     text-align: center;
+     padding: 0 2.5rem; 
+     height: 30rem;
+
+}
+
+
+main h1{
+     padding: 2rem;
+}
+
+main p + p{
+     padding: 1rem 0;
+}
+
+main p + p i{
+     margin-right: 0.35rem;
+} */
+
+
+
+/******************************************
+/* SECTION WHY
+/*******************************************/
+
+/* main + section {
+     text-align: center;
+     padding: 0 2.5rem;
+}
+
+main + section h2 {
+     padding: 2rem;
+}
+
+main + section p {
+     padding-bottom: 2.5rem;
+} */
+
+
+/******************************************
+/* SECTION INFORMATION
+/*******************************************/
+
+/* .information {
+     text-align: center;
+     padding: 2rem 2.5rem;
+     background-color: var(--dark-gray);
+}
+
+
+.information img{
+     margin-top: 1.5rem; 
+     padding-bottom: 1rem; 
+}
+
+.information h2 {
+     padding-top: 2rem;
+}
+
+.information p {
+     padding: 0.75rem 0;
+     margin-bottom: 1rem; ;
+}
+
+.information a { 
+     padding: 0.75rem 0.75rem;
+     border: solid 1px black;
+     text-decoration: none;
+     color: black; 
+} */
+
+
+/******************************************
+/* SECTION VOLUNTEER
+/*******************************************/
+
+
+
+/* .volunteer {
+     text-align: center;
+     padding: 0 2.5rem;
+}
+
+.volunteer h2 {
+     padding: 2rem;
+}
+
+.volunteer p {
+     padding-bottom: 2.5rem;
+}
+
+.volunteer a {
+     padding: 0.75rem 0.75rem;
+     text-decoration: none;
+     color: black;
+     border: solid black 1px;
+} */
+
+
+
+/******************************************
+/* Footer
+/*******************************************/
+
+/* footer{
+     margin-top: 3rem; 
+     padding-top: 2rem; 
+     color: var(--light-gray);
+     background-color: var(--dark-blue);
+   
+}
+footer section {
+     text-align: left; 
+     text-align: center;
+     padding: 0 3rem; 
+  }
+
+footer div a {
+     text-decoration: none;
+     color: var(--light-gray)
+
+}
+
+footer i:nth-of-type(2){
+     padding: 1rem; 
+}
+
+footer div{
+     padding-bottom: 1rem; ;
+}
+
+footer div a:nth-of-type(1){
+     padding-right: 1rem; ;
+}
+
+footer section + section {
+     margin-top: 2rem; 
+}
+
+footer section + section + section {
+     padding: 2rem; 
+     border-top: 2px solid gray;
+}
+
+footer section + section > h5{
+     padding-bottom: 0.5rem;
+} */
+
+
+
+
+
+
+
+/******************************************
+/* Media Query Manager
+/*******************************************/
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+
+
+     /* 360 */
+     @media only screen and (min-width: 22.5em) {
+          /* main{
+               height: 35rem;
+          }
+          
+          main h1{
+               padding: 5rem;
+          } */
+     
+     }
+
+      /* 600px */
+      @media only screen and (min-width: 37.5em) {
+          
+          h1{
+               font-size: 2rem;
+          }
+          
+          h2,h3{
+               font-size: 1.7rem;
+          }
+          
+          p{
+               font-size: 1.5rem;
+          }
+
+          .information a{
+               font-size: 1.5rem;
+
+          }
+
+          .volunteer a{
+               font-size: 1.5rem;
+          }
+
+          footer div a{
+               font-size: 1.5rem;
+          }
+
+          .hamburger img, .hamburger i{
+               height: 3rem;
+               margin:2.5rem; 
+          }
+
+          footer i{
+               font-size: 1.5rem;
+          }
+          
+
+          footer h5{
+               font-size: 1.7rem;
+          }
+
+     }
+
+         /* 900px */
+     @media only screen and (min-width: 56.25em) {
+          
+
+          /* main h1{
+               padding-top: 9rem;
+          }
+          h1{
+               font-size: 2.5rem;
+          }
+          
+          h2,h3{
+               font-size: 2.2rem;
+          }
+          
+          p{
+               font-size: 1.8rem;
+          }
+
+          .hamburger{display:none;}
+
+          nav{
+               display:block;
+               text-align: center;
+               background-color: var(--gray-blue);
+               
+          }
+
+          nav img {
+               position: absolute;
+               left: 50%;
+               margin-left: -50px !important;  
+               display: block;
+          }
+    
+
+          nav a{
+               text-decoration: none;
+               color: var(--light-gray);
+               float: right; 
+               padding: 1.5rem 0;
+               padding-right: 1.5rem;
+          }
+
+          nav div a{
+               float: left; 
+               padding: 1.5rem 0;
+               padding-left: 2rem;
+          }
+
+
+
+          .information a{
+               font-size: 1.8rem;
+
+          }
+
+          .volunteer a{
+               font-size: 1.8rem;
+          }
+
+          footer div a{
+               font-size: 1.8rem;
+          }
+
+          .hamburger img, .hamburger i{
+               height: 3rem;
+               margin:2.5rem; 
+          }
+
+          footer{
+               padding: 0 2rem; 
+          }
+
+          
+          footer i{
+               font-size: 1.8rem;
+          }
+
+
+          footer .split1{
+               width:40%;
+               float: left; 
+               text-align: left;
+          }
+
+          .split2{
+               float: right;
+               width:40%;
+               margin-top: 0;
+               margin-bottom: 2rem; 
+               text-align: left;
+          } */
+
+     }  
+
+         /* 1200px */
+     @media only screen and (min-width: 68.75em) {
+          /* .information section{
+               width: 50%;
+               float: right;
+               background-color: var(--dark-gray);
+          } */
+
+     }
+ 
+   
+        /* 1800 px */
+     @media only screen and (min-width: 112.5em) {
+          
+  
+     }
+
+
+
+
+
+     
+
+
+
+
+ 
