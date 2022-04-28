@@ -237,15 +237,13 @@ section.features{
 section.information{
      margin-bottom: 3rem;
      padding: 0 1rem; 
-     background-color: white;
-     height: 15rem;
+
 }
 
 .information h1 {
      font-weight: bold;
      margin-bottom: 1rem;
      font-size: 2rem;
-     padding-top: 3rem; 
 
 }
 
@@ -455,42 +453,10 @@ Ems are the best option for media queries
 
          /* 1200px */
      @media only screen and (min-width: 68.75em) {
-         main section {
-              width: 50%;
-              float: left; 
-         }  
+         main + section {
+              float: right; 
          
- 
-         
-         .features section{
-              width: 25%;
-              float: left; 
-         }
-
-         
-         section.information{
-          padding: 0 5rem; 
-     
-     }
-
-     section.features{
-          padding: 0 5rem; 
-     
-     }
-
-     main {
-          padding: 0 5rem;
-     }
-
-     main img{
-          width: 100%;
-     }
-
-
-     /* .features section + section i:first-of-type{
-          margin-top:-3rem;
-     } */
-
+         }     
      }
  
    

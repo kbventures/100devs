@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root{
+     --aqua-haze: #f0f5f7;
+     --geyser: #dce3e7;
+     --mirage: #1a1a30;
+     --nobel: #b5aead;
+     --carrot-orange: #ed881e;
+     --black: #000000
+};
+
+html {
+     font-size: 62.5%;
+}
+
+body{
+     box-sizing: border-box;
+     line-height: 1;
+     background-color: var(--light-gray);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* NAVIGATION & HAMBURGER ICON
+/*******************************************/
+
+
+.desktop{
+     display: none; 
+}
+
+
+.mobile{
+     height: 3rem;
+     margin: 0 auto;
+     background-color: var(--light-gray);
+     position: relative;
+}
+
+
+ .mobile img{
+    width: 3rem; 
+    position: absolute;
+    top: 0.3rem;
+    left: 1.2rem; 
+} 
+
+nav.mobile i{
+    font-size: 2rem;
+    color: var(--carrot-orange);
+    width: 3rem; 
+    position: absolute;
+    top: 1rem;
+    right:.35rem; 
+}
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+body, html{
+     height: 100%;
+}
+
+
+header {
+     background-image: url(hero-banner.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+}
+
+
+
+main{
+     padding: 0 3rem 0 1rem;
+}
+
+main form, main ul {
+     margin: 1rem 0;
+     
+}
+
+main h1 {
+     margin-top: 5rem;
+}
+
+main ul, main form{
+     margin-top: 2rem; 
+}
+
+main ul li {
+     float: left;
+}
+
+
+main ul li i, main ul li{
+     margin-right: 0.5rem;
+}
+
+main ul li i{
+     color: var(--carrot-orange);
+}
+
+
+main form {
+     width: 100%;
+     position: relative; 
+}
+
+main form i{
+     position: absolute;
+     color: var(--nobel);
+     font-size: 0.8rem;
+     top: 0.4rem;
+     left: 0.1rem;
+     
+}
+
+
+
+main form input::placeholder{
+     font-size: 0.8rem;
+     padding-left: 1.25rem;
+}
+
+main form input{
+     border: none; 
+     height: 1.6rem;
+     min-width: 80%;
+     border-radius: 5px;
+}
+
+main form a {
+     position: absolute;
+     top: 0;
+     right: 3rem;
+     text-decoration: none;
+     font-size: 0.6rem;
+     background: var(--carrot-orange);
+     color:var(--aqua-haze);
+     border-radius: 5px;
+     padding: 0.5rem 0.35rem;
+}
+
+
+
+
+/******************************************
+/* Features Section
+/*******************************************/
+
+
+
+
+
+
+
+/******************************************
+/* Information
+/*******************************************/
+
+
+
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+h1{
+     font-size: 2rem;
+}
+
+
+
+
+
+/******************************************
+/* Media Query Manager
+/*******************************************/
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+      /* 600px */
+      @media only screen and (min-width: 37.5em) {
+
+          .mobile{display: none}
+
+          .desktop{display: block; }
+        
+
+   
+
+     }
+
+         /* 900px */
+     @media only screen and (min-width: 56.25em) {
+
+
+
+     }
+
+
+
+
+         /* 1200px */
+     @media only screen and (min-width: 68.75em) {
+
+
+     }
+ 
+   
+        /* 1800 px */
+     @media only screen and (min-width: 112.5em) {
+          
+  
+     }
+
+
+
+
+
+     
+
+
+
+
+ 
