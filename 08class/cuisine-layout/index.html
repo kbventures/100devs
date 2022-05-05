@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Responsive Template</title>
 
-		<!-- external CSS link -->
-		<script src="https://kit.fontawesome.com/68d05a0962.js" crossorigin="anonymous"></script>	</head>
-		<link rel="stylesheet" href="style.css">
-	<body>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Template</title>
+
+	<!-- external CSS link -->
+	<script src="https://kit.fontawesome.com/68d05a0962.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
 
 	<header>
-	<nav class="desktop">
-		<img src="logo.png" alt="Cuisine Logo">
-		<ul>
-			<li>Home</li>
-			<li>About Us</li>
-			<li>Menu</li>
-			<li>Order Now</li>
-			<li>Blog</li>
-			<li>Location</li>
+		<div class="submenu clearfix">	
+			<img src="logo.png" alt="Cuisine Logo">
+			<i class="cart fa-solid fa-cart-shopping"></i>
+			<i class="glass fa-solid fa-magnifying-glass"></i>
+		</div>
+		<nav class="desktop clearfix">
+			<ul>
+				<li>Home</li>
+				<li>About Us</li>
+				<li>Menu</li>
+				<li>Order Now</li>
+				<li>Blog</li>
+				<li>Location</li>
+			
+		</nav>
+		<nav class="mobile">
+			<img src="logo.png" alt="Logo">
+		</nav>
+
+
+		<!-- Main -->
+		<main class="clearfix">
+			<h1>Welcome To Our Cuisine Restaurant</h1>
+			<form action="/" method="GET" class="form">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<input type="search" placeholder="Search" />
+				<a href="#">Location</a>
+				<!-- <button type="submit" class="search-button">Location</button> -->
+			</form>
+			<ul>
+				<li><i class="fa-brands fa-facebook-f"></i>252K</li>
+				<li><i class="fa-brands fa-twitter"></i>62K</li>
+				<li><i class="fa-brands fa-instagram"></i>55K</li>
+			</ul>
+		</main>
 	
-		<i class="fa-solid fa-cart-shopping"></i>
-		<i class="fa-solid fa-magnifying-glass"></i>
-	</nav>
-	<nav class="mobile">
-		<img src="logo.png" alt="Logo"> 
-		<i class="fa-solid fa-bars"></i>
-	</nav>
-
-
-	<!-- Main -->
-
-	<main>
-		<h1>Welcome To Our Cuisine Restaurant</h1>
-		<form action="/" method="GET" class="form">
-			<i class="fa-solid fa-magnifying-glass"></i>
-			<input type="search" placeholder="Search"/>
-			<a href="#">Location</a>
-			<!-- <button type="submit" class="search-button">Location</button> -->
-		</form>
-		<ul>
-			<li><i class="fa-brands fa-facebook-f"></i>252K</li>
-			<li><i class="fa-brands fa-twitter"></i>62K</li>
-			<li><i class="fa-brands fa-instagram"></i>55K</li>
-		</ul>
-	</main>
 	</header>
 
 
@@ -57,14 +61,16 @@
 
 	<!-- Story -->
 
-<!-- 
+	
 	<section class="story">
+		<div class="hero2">
 		<span>About Us</span>
 		<h2>Discover Our Restaurant Story</h2>
 		<p>Cuisine is a team of Cuisine Restaurant Cafe, we aim at promoting the foodstuff industry through the branches we establish through the new dishes and integrate between different cultures. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum eos quia ab cumque harum!</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi necessitatibus, ipsum aliquid error facere voluptates vitae itaque quia similique eligendi?</p>
 		<a href="">Discover Menu<i class="fa-solid fa-arrow-right"></i></a>
-	</section> -->
+		<div>
+	</section>
 
 
 	<!-- Cuisine -->
@@ -127,5 +133,9 @@
 			we establish and through the new dishes. 
 		</p>
 	</section> -->
-	</body>
+	<footer class="mobile-fixed-footer">
+		<i class="fa-solid fa-bars"></i>
+	</footer>
+</body>
+
 </html>
