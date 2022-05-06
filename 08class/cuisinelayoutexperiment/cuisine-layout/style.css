@@ -1,0 +1,699 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+     display: block;
+}
+
+body {
+     line-height: 1;
+}
+
+ol,
+ul {
+     list-style: none;
+}
+
+blockquote,
+q {
+     quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+     content: '';
+     content: none;
+}
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+     padding: 0;
+     box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+     clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* :root{
+     --aqua-haze: #f0f5f7;
+     --geyser: #dce3e7;
+     --mirage: #1a1a30;
+     --nobel: #b5aead;
+     --carrot-orange: #ed881e;
+     --black: #000000;
+     --font-size: 62.5%;
+}; */
+
+html {
+     font-size: 62.5%;
+}
+
+@media only screen and (min-width: 22.5em){
+     html{
+     font-size: 80%;
+     }
+}
+
+@media only screen and (min-width: 37.5em){
+     html{
+          font-size: 130%;
+     }
+}
+
+@media only screen and (min-width: 56.25em){
+     html{
+          font-size: 150%;
+     }
+}
+
+@media only screen and (min-width: 68.25em){
+ 
+}
+
+
+body {
+     box-sizing: border-box;
+     line-height: 1;
+     background-color: var(--light-gray);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* NAVIGATION & FIXED FOOTER HAMBURGER ICON
+/*******************************************/
+
+
+.desktop, .submenu {
+     display: none;
+}
+
+.mobile {
+     height: 3rem;
+     margin: 0 auto;
+     background-color: var(--light-gray);
+     position: relative;
+}
+
+
+.mobile img {
+     width: 7rem;
+     position: absolute;
+     top: 1.5rem;
+     left: 2.5rem;
+}
+
+footer.mobile-fixed-footer i {
+     position: fixed;
+     bottom: 0;
+     height: 3rem;
+     font-size: 3rem;
+     color:#f0f5f7;
+     width: 100%;
+     background-color: rgba(237, 136, 30, 0.7);
+     text-align: center;
+
+}
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+body,
+html {
+     height: 100%;
+}
+
+
+header {
+     background-image: url(hero-banner.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+}
+
+
+
+main {
+     margin-top: 12rem;
+     margin-left: 3rem;
+     width: 19rem;
+}
+
+
+
+main ul,
+main form {
+     margin: 4rem 0;
+}
+
+main ul li {
+     float: left;
+}
+
+
+main ul li i,
+main ul li {
+     margin-right: 0.5rem;
+}
+
+main ul li i {
+     color: rgba(237, 136, 30, 1);
+}
+
+
+main form {
+     width: 100%;
+     position: relative;
+}
+
+main form i {
+     position: absolute;
+     top: 15%; left: 0;
+     color: rgba(169, 169, 169, 1);
+
+}
+
+
+
+main form input::placeholder {
+     font-size: 1.25rem;
+     padding-left: 1.25rem;
+}
+
+main form input {
+     border: none;
+     height: 1.6rem;
+     width: 100%;
+     border-radius: 5px;
+}
+
+main form a {
+     position: absolute;
+     top: 0; 
+     right: 0;
+     text-decoration: none;
+     font-size: 1.2rem;
+     background: rgba(237, 136, 30, 1);
+     color:white;
+     padding: 0.25rem;
+     border-radius: 3px;
+}
+
+
+/******************************************
+/* story
+/*******************************************/
+
+
+
+ 
+
+
+.story{
+     position: relative;
+     background-image: url(hero-banner2v2.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+     border-top: 3px solid rgba(237, 136, 30, 1);
+     border-bottom: 3px solid rgba(237, 136, 30, 1);
+
+}
+
+ .story > div {
+     padding: 3rem; 
+     border: 3px solid rgba(237, 136, 30, 1);
+     width: 19rem; 
+     background-color: rgba(220,227,231, 0.95);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: justify;
+     
+} 
+
+
+.story h2, .story p, .story div > div{
+     margin-top:1.5rem; 
+}
+     
+
+.story div span{
+     color:rgba(237, 136, 30, 1);
+     font-weight: bold;
+     text-align: justify;
+    
+}
+
+
+.story a{
+     text-decoration: none;
+     font-size: 1.2rem;
+     background: rgba(237, 136, 30, 1);
+     color:white;
+     padding: 0.25rem;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+
+}
+
+
+.story i{
+     text-decoration: none;
+     font-size: 1.2rem;
+     background: rgb(234, 171, 103);
+     color:white;
+     padding: 0.12rem 0.3rem 0.3rem 0.3rem;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius:3px  ;
+     margin-left: -0.25rem;
+}
+
+
+
+
+/******************************************
+/* Menu
+/*******************************************/
+
+
+.cuisine{
+     background-color: rgba(220,227,231);
+}
+
+
+.cuisine section:first-of-type{
+     text-align: center;
+}
+
+
+.cuisine span{
+     color: rgba(237, 136, 30, 1);
+}
+
+.cuisine ul{
+     text-align: center;
+}
+
+
+.cuisine li{
+     border-bottom: 1px solid grey;
+     float: left; 
+}
+
+.cuisine li:first-of-type{
+     border-bottom: 1px solid rgba(237, 136, 30, 1);
+
+}
+
+.cuisine img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 70%;
+}
+
+
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+main h1  {
+     font-size: 2.5rem;
+}
+
+
+main form i, main form input, main form a {
+     font-size: 1rem;
+}
+
+
+main ul li i {
+     font-size: 1.5rem;
+}
+
+main ul li {
+     font-size: 1.2rem;
+}
+
+
+main form a {
+     font-size: 1rem;
+}
+
+
+
+.story h2{
+     font-size: 2rem;
+}
+
+.story span {
+     font-size: 1.2rem;
+}
+
+.story a{
+     font-size: 1rem;
+}
+
+
+.story i{
+     font-size: 1.2rem;
+}
+
+
+.cuisine h2{
+     font-size: 2rem; 
+}
+
+
+
+
+/******************************************
+/* Media Query Manager
+/*******************************************/
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+
+/* 360px */
+@media only screen and (min-width: 22.5em){
+
+
+     .mobile img{
+          top: 3rem;
+          left: 4.5rem;
+     }
+
+     main{
+          margin-left: 5.5rem;
+     }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5em) {
+
+     .mobile {
+          display: none
+     }
+
+     .desktop {
+          display: block;
+     }
+
+
+
+     .desktop {
+          height: 5rem;
+          width: 100%;
+          position: relative;
+          /* background-color: rgba(240, 245, 247, 0.2); */
+     }
+
+     .desktop ul {
+          position: absolute;
+          margin-top: 2rem;
+          top: 50%;
+          left: -2rem;
+     }
+
+     
+     .desktop ul li {
+          float: right;
+          margin: 0 1rem;
+          width: 8%;
+          font-size: 1.3rem;
+     }
+
+
+     .submenu{
+          display: block; 
+     }
+
+
+     .submenu i:first-of-type{
+          position: absolute;
+          top:4rem; 
+          left: 12rem; 
+     }
+
+     .submenu i:nth-of-type(2){
+          position: absolute;
+          top:4rem; 
+          left: 15rem; 
+     }
+     
+     .submenu img {
+          width: 5rem;
+          padding-top: 2rem;
+          margin-left: 4.5rem;
+     }
+
+     main{
+          margin-top: 9rem; 
+     }
+
+     .story > div {
+          width: 60%;
+     }
+
+     footer{
+          display: none; 
+     }
+
+
+
+
+}
+
+
+/* 900px */
+@media only screen and (min-width: 43em) {
+
+          .submenu{
+               padding-top: 12rem; 
+          }
+
+          .submenu i:first-of-type{
+               position: absolute;
+               top:16.5rem; 
+               left: 12rem; 
+          }
+     
+          .submenu i:nth-of-type(2){
+               position: absolute;
+               top:16.5rem; 
+               left: 15rem; 
+          }
+}
+
+
+/* 900px */
+@media only screen and (min-width: 56.25em) {
+
+     .submenu{
+          padding-top:1rem; 
+     }
+
+     .submenu i:first-of-type{
+          position: absolute;
+          top:6rem; 
+          left: 12rem; 
+     }
+
+     .submenu i:nth-of-type(2){
+          position: absolute;
+          top:6rem; 
+          left: 15rem; 
+     }
+
+}
+
+
+
+
+/* 1200px */
+@media only screen and (min-width: 68.75em) {
+
+     .submenu{
+          padding-top:2rem; 
+     }
+
+     .submenu i:first-of-type{
+          position: absolute;
+          top:6rem; 
+          left: 12rem; 
+     }
+
+     .submenu i:nth-of-type(2){
+          position: absolute;
+          top:6rem; 
+          left: 15rem; 
+     }
+}
+
+
+/* 1800 px */
+@media only screen and (min-width: 112.5em) {}
