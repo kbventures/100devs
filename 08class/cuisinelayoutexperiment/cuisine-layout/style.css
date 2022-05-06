@@ -185,18 +185,20 @@ html {
 
 @media only screen and (min-width: 37.5em){
      html{
-          font-size: 130%;
+          font-size: 120%;
      }
 }
 
 @media only screen and (min-width: 56.25em){
      html{
-          font-size: 150%;
+          font-size: 135%;
      }
 }
 
 @media only screen and (min-width: 68.25em){
- 
+     html{
+          font-size: 150%;
+     }
 }
 
 
@@ -225,15 +227,18 @@ body {
      height: 3rem;
      margin: 0 auto;
      background-color: var(--light-gray);
-     position: relative;
+     position: absolute;
+     top: 7.5%;
+     left: 20%;
+     transform: translate(-50%,-50%)
 }
 
 
 .mobile img {
      width: 7rem;
-     position: absolute;
+     /* position: absolute;
      top: 1.5rem;
-     left: 2.5rem;
+     left: 2.5rem; */
 }
 
 footer.mobile-fixed-footer i {
@@ -269,9 +274,13 @@ header {
 
 
 main {
-     margin-top: 12rem;
-     margin-left: 3rem;
+     /* margin-top: 12rem;
+     margin-left: 3rem; */
      width: 19rem;
+     position: absolute;
+     top: 50%;
+     left: 40%;
+     transform: translate(-50%,-50%)
 }
 
 
@@ -460,7 +469,7 @@ main form a {
 
 
 main h1  {
-     font-size: 2.5rem;
+     font-size: 2.3rem;
 }
 
 
@@ -541,19 +550,11 @@ Ems are the best option for media queries
 /* 360px */
 @media only screen and (min-width: 22.5em){
 
-
-     .mobile img{
-          top: 3rem;
-          left: 4.5rem;
-     }
-
-     main{
-          margin-left: 5.5rem;
-     }
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5em) {
+
 
      .mobile {
           display: none
@@ -566,25 +567,27 @@ Ems are the best option for media queries
 
 
      .desktop {
-          height: 5rem;
-          width: 100%;
-          position: relative;
-          /* background-color: rgba(240, 245, 247, 0.2); */
-     }
-
-     .desktop ul {
+          width: 19rem; 
           position: absolute;
-          margin-top: 2rem;
-          top: 50%;
-          left: -2rem;
+          top: -80%;
+      
      }
-
      
      .desktop ul li {
-          float: right;
-          margin: 0 1rem;
-          width: 8%;
-          font-size: 1.3rem;
+          float: left;
+          margin-right: 1rem;           
+     }
+
+     .desktop ul li:hover {
+          border-bottom: solid 3px rgba(237, 136, 30, 1);
+
+     }
+
+     .desktop img {
+          position: absolute;
+          height:5rem; 
+          top: 3rem; 
+          right: 25rem; 
      }
 
 
@@ -611,12 +614,13 @@ Ems are the best option for media queries
           margin-left: 4.5rem;
      }
 
-     main{
+     /* main{
           margin-top: 9rem; 
-     }
+     } */
 
      .story > div {
-          width: 60%;
+          max-width: 80%;
+          width: 75%;
      }
 
      footer{
@@ -632,26 +636,19 @@ Ems are the best option for media queries
 /* 900px */
 @media only screen and (min-width: 43em) {
 
-          .submenu{
-               padding-top: 12rem; 
-          }
 
-          .submenu i:first-of-type{
-               position: absolute;
-               top:16.5rem; 
-               left: 12rem; 
-          }
+     .desktop {
+          width: 19rem; 
+          position: absolute;
+          top: -60%;
+      
+     }
      
-          .submenu i:nth-of-type(2){
-               position: absolute;
-               top:16.5rem; 
-               left: 15rem; 
-          }
-}
-
-
-/* 900px */
-@media only screen and (min-width: 56.25em) {
+     .desktop ul li {
+          float: left;
+         
+          margin-right: 1rem;           
+     }
 
      .submenu{
           padding-top:1rem; 
@@ -669,7 +666,14 @@ Ems are the best option for media queries
           left: 15rem; 
      }
 
+     .story > div {
+          max-width: 80%;
+          width: 65%;
+     }
 }
+
+
+
 
 
 
@@ -677,23 +681,24 @@ Ems are the best option for media queries
 /* 1200px */
 @media only screen and (min-width: 68.75em) {
 
-     .submenu{
-          padding-top:2rem; 
-     }
-
-     .submenu i:first-of-type{
+     .desktop {
+          width: 19rem; 
           position: absolute;
-          top:6rem; 
-          left: 12rem; 
+          top: -65%;
+      
      }
+     
 
-     .submenu i:nth-of-type(2){
-          position: absolute;
-          top:6rem; 
-          left: 15rem; 
-     }
 }
 
 
 /* 1800 px */
-@media only screen and (min-width: 112.5em) {}
+@media only screen and (min-width: 112.5em) {
+     .desktop {
+          width: 19rem; 
+          position: absolute;
+          top: -80%;
+      
+     }
+     
+}
