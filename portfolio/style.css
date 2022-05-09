@@ -182,7 +182,7 @@ html {
 
 body {
      box-sizing: border-box;
-     line-height: 1.6;
+     line-height: 1.5;
 	 background-color: var(--white);
 	 font-family: 'Roboto Slab', serif;
 }
@@ -193,7 +193,7 @@ body {
 /*******************************************/
 
 .inner {
-	padding: 0 2rem; 
+	padding: 0 2.4rem; 
 }
 
 
@@ -207,12 +207,13 @@ nav{
 
 nav ul {
 	display: flex; 
-	color: var(--cool-grey)
+	color: var(--cool-grey);
+	align-items: center;
 
 }
 
-nav li {
-	padding-right: 1.2rem; 
+nav li:not(:last-child) {
+	padding-right: 1.3rem; 
 }
 
 nav > i {
@@ -232,7 +233,7 @@ header > a {
 	text-decoration: none;
 	color: var(--oslo-grey);
 	display: inline-block; 
-	padding: 2rem 0; 
+	padding: 2.5rem 0 0.4rem; 
 }
 header > a strong {
 	text-decoration: none;
@@ -247,6 +248,7 @@ header > a strong {
 
 main{
 	padding: 3.6rem 0 1.2rem; 
+	border-bottom: 1px solid var(--metallic-silver-light);
 }
 
 main img{
@@ -258,7 +260,54 @@ main img{
 main h1 {
 	color: var(--mako);
 	font-weight: 700;
+	margin-bottom: 1.2rem; 
 }
+
+main p{
+	color: var(--oslo-grey);
+	margin-bottom: 2.4rem;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+}
+
+
+
+
+/******************************************
+/* Projects
+/*******************************************/
+
+
+section {
+
+}
+
+section > h2{
+	color: var(--mako);
+	border-bottom:var(--green) solid 3px;
+	display: inline-block;
+
+}
+
+.project img{
+	width: 100%;
+}
+
+.project{
+	margin-bottom: 5rem;  
+}
+
+.project h3{
+	margin-bottom: 1.5rem;
+	color:var(--mako);
+	font-weight: 700;
+}
+
+.project h3 + div {
+	margin-bottom: 2.4rem;
+}
+
+
 
 
 /******************************************
@@ -283,6 +332,24 @@ main h1 {
 	font-size: 2.4rem; ;
 }
 
+main p {
+	font-size: 1rem;
+}
+
+
+header > a {
+	font-size: 1.5rem; ;
+}
+
+section > h2 {
+	font-size: 2rem;
+}
+
+
+.project h3 {
+	font-size: 1.5rem;
+}
+
 
 
 /******************************************
@@ -291,25 +358,17 @@ main h1 {
 
 .button {
 	text-decoration: none;
-	padding-bottom: 2rem 10rem; 
+	padding: 0.75rem 2rem; 
 	color: var(--green);
 	text-transform: uppercase;
 	font-size: 1rem; 
-	font-weight: 700;
+	font-weight: 500;
 	border-radius: 3px;
-	border: 3px solid var(--green);
+	border: 2px solid var(--green);
 	display: inline-block;
 }
 
 
-header > a {
-	font-size: 1.5rem; ;
-}
-
-
-main h1 {
-	font-size: 2.4rem; ;
-}
 
 
 
