@@ -173,6 +173,8 @@ table {
 	 --oslo-grey: #7F888F;
 	 --grey: grey; 
 	 --mako: #3D4449;
+	 --porcelain: #F5F6F7; 
+
 }
 
 html {
@@ -198,7 +200,7 @@ body {
 
 
 /******************************************
-/* NAVIGATION & FIXED FOOTER HAMBURGER ICON
+/* NAVIGATION & HAMBURGER MENU
 /*******************************************/
 nav{
 	display: flex; 
@@ -216,10 +218,10 @@ nav li:not(:last-child) {
 	padding-right: 1.3rem; 
 }
 
-nav > i {
+nav > span i{
 	color: var(--cool-grey);
 	background-color: var(--metallic-silver-light);
-	padding: .8rem 1.8rem; 
+	padding: 1.8rem 1.8rem; 
 	border-radius:3px; 
 }
 
@@ -242,18 +244,66 @@ header > a strong {
 }
 
 
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:var(--porcelain);
+	overflow-x: hidden;
+	padding: 2rem; 
+
+  }
+
+.sidenav i{
+	color: var(--green);
+}
+
+.sidenav h3{
+	border-bottom:var(--green) solid 3px;
+	display: inline-block;
+	color: var(--mako);
+	padding-bottom: 0.5rem;
+	margin-bottom: 3rem;
+}
+
+.sidenav p, .sidenav li{
+	color: var(--oslo-grey)
+}
+
+
+.sidenav li{
+	color: var(--oslo-grey);
+	border-bottom:0.5px solid var(--oslo-grey);
+	padding-bottom: 1rem;
+}
+
+
+  
+  /* .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  } */
+  
+
+
 /******************************************
 /* MAIN
 /*******************************************/
 
 main{
-	padding: 3.6rem 0 1.2rem; 
-	border-bottom: 1px solid var(--metallic-silver-light);
+	padding: 3.6rem 0 3.6rem; 
+	border-bottom: 2px solid var(--metallic-silver-light);
 }
 
 main img{
-	width: 100%;
-	border-radius: 3px; 
+	width: 100%; 
 	padding: 1rem 0 3rem 0;
 }
 
@@ -278,7 +328,8 @@ main p{
 /*******************************************/
 
 
-section {
+.projects {
+	padding-top: 3.6rem;
 
 }
 
@@ -286,6 +337,9 @@ section > h2{
 	color: var(--mako);
 	border-bottom:var(--green) solid 3px;
 	display: inline-block;
+	padding-bottom: 1rem;;
+	margin-bottom: 3.6rem; 
+
 
 }
 
@@ -294,10 +348,13 @@ section > h2{
 }
 
 .project{
-	margin-bottom: 5rem;  
+	margin-bottom: 3rem;  
+	padding: 0 0 0rem; 
+	border-bottom: 2px solid var(--metallic-silver-light);
 }
 
 .project h3{
+	padding-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	color:var(--mako);
 	font-weight: 700;
@@ -306,6 +363,17 @@ section > h2{
 .project h3 + div {
 	margin-bottom: 2.4rem;
 }
+
+.project p {
+	color: var(--oslo-grey)
+}
+
+.project strong {
+	color: var(--mako);
+	font-weight: 600;
+}
+
+
 
 
 
@@ -346,8 +414,20 @@ section > h2 {
 }
 
 
+.sidenav h3 {
+	font-size: 1.5rem;
+}
+
+.sidenav i {
+	font-size: 1.5rem;
+}
+
 .project h3 {
 	font-size: 1.5rem;
+}
+
+.project p, .project strong{
+	font-size: 1.2rem;
 }
 
 

@@ -12,15 +12,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="inner">
         <header>
+
+            <section id="mySidenav" class="sidenav">
+                <h3>Get in touch</h3>
+                <p>Reach out and let's start a conversation</p>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i>ShawnCharles@protonmail.com</li>
+                    <li><i class="fa-brands fa-twitter"></i>ShawnCharles.com/Twiter</li>
+                    <li><i class="fa-brands fa-linkedin"></i>ShawnCharles.com/linkedin</li>
+                    <li><i class="fa-brands fa-github"></i>ShawnCharles.com/Github</li>
+                </ul>
+                <p>&copy CharlesCreativeContent. All rights reserved.</p>
+            </section>
+
+
             <nav>
-                <i class="fa-solid fa-bars"></i>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
                 <ul>
                     <li><i class="far fa-moon"></i></li>
                     <li><i class="fa-solid fa-envelope"></i></li>
@@ -52,20 +68,44 @@
                     <img src="./soon.png" alt="">
                     <h3>Travelara</h3>
                     <div>
-                        <p><span>Javascript, Bootstrap, SASS, Node.js & Express.js</span> - Platform to help build momentous milestones
-                        along with your friends and family! Travelara makes Dream Trips a Reality!
+                        <p><strong>Javascript, Bootstrap, SASS, Node.js & Express.js</strong> - Platform to help build
+                            momentous milestones
+                            along with your friends and family! Travelara makes Dream Trips a Reality!
+                        </p>
+                        <p><strong>Demo account:</strong>: demo@demo.com</p>
+                        <p><strong>Demo password</strong>: demo</p>
+                        <a class="button" href="">Visit</a>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="./soon.png" alt="">
+                    <h3>Travelara</h3>
+                    <div>
+                        <p><span>Javascript, Bootstrap, SASS, Node.js & Express.js</span> - Platform to help build
+                            momentous milestones
+                            along with your friends and family! Travelara makes Dream Trips a Reality!
                         </p>
                         <p><span>Demo account:</span>demo@demo.com</p>
                         <p><span>Demo password</span>demo</p>
                         <a class="button" href="">Visit</a>
                     </div>
                 </section>
-               
+
             </div>
         </section>
 
 
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "260px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
