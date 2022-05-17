@@ -164,7 +164,17 @@ table {
 /* BASE STYLES
 /*******************************************/
 :root{
+	 --green: green;
      --black: #000000;
+	 --white: #ffffff;
+	 --metallic-silver-light: #dce3e9; 
+	 --metallic-silver: #bfc5ca; 
+	 --cool-grey: #969fa6;
+	 --oslo-grey: #7F888F;
+	 --grey: grey; 
+	 --mako: #3D4449;
+	 --porcelain: #F5F6F7; 
+	 --anti-flash: #eff1f2;
 }
 
 html {
@@ -174,7 +184,9 @@ html {
 
 body {
      box-sizing: border-box;
-     line-height: 1;
+     line-height: 1.5;
+	 background-color: var(--white);
+	 font-family: 'Roboto Slab', serif;
 }
 
 
@@ -183,8 +195,9 @@ body {
 /*******************************************/
 
 
+
 /******************************************
-/* NAVIGATION & FIXED FOOTER HAMBURGER ICON
+/* NAVIGATION & HAMBURGER MENU
 /*******************************************/
 
 
@@ -194,12 +207,24 @@ body {
 /*******************************************/
 
 
+
+
+/******************************************
+/* Projects
+/*******************************************/
+
+
+
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
 
 
 
+
+/******************************************
+/* Button
+/*******************************************/
 
 
 
@@ -239,13 +264,21 @@ Ems are the best option for media queries
 @media only screen and (min-width: 22.5em){
 }
 
+
+/* 480px */
+@media only screen and (min-width: 30em) {
+
+}
+
 /* 600px */
 @media only screen and (min-width: 37.5em) {
+
 }
 
 
-/* 900px */
-@media only screen and (min-width: 43em) {
+/* 736px */
+@media only screen and (min-width: 46em) {
+
 }
 
 
@@ -260,4 +293,6 @@ Ems are the best option for media queries
 
 
 /* 1800 px */
-@media only screen and (min-width: 112.5em) {}
+@media only screen and (min-width: 105em) {
+
+}
