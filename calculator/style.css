@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+     display: block;
+}
+
+body {
+     line-height: 1;
+}
+
+ol,
+ul {
+     list-style: none;
+}
+
+blockquote,
+q {
+     quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+     content: '';
+     content: none;
+}
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+     padding: 0;
+     box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+     clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root {
+     --green: green;
+     --black: #000000;
+     --white: #ffffff;
+     --metallic-silver-light: #dce3e9;
+     --metallic-silver: #bfc5ca;
+     --cool-grey: #969fa6;
+     --oslo-grey: #7F888F;
+     --grey: grey;
+     --mako: #3D4449;
+     --porcelain: #F5F6F7;
+     --anti-flash: #eff1f2;
+}
+
+html {
+     font-size: 62.5%;
+}
+
+
+body {
+     box-sizing: border-box;
+     line-height: 1.5;
+     background-color: var(--white);
+     font-family: 'Roboto Slab', serif;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container{
+     display: flex;
+     flex: 0 1 60%;
+     flex-direction: column;
+     flex-wrap: wrap;
+     min-width:400px;
+
+}
+
+
+
+
+.result,.buttons{
+     display: flex;
+     flex-wrap: wrap; 
+     flex: 0 1 100%;
+
+}
+
+.result{
+     justify-content: flex-end;
+     align-items: center;
+     color: white;
+     background-color: #000000;
+}
+
+.button{
+  
+     display: flex; 
+     flex: 0 1 25%;
+     justify-content: center;
+     background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
+     justify-content: center;
+     align-items: center;
+}
+
+
+.zero-btn{
+     flex-grow: 2; 
+}
+
+
+
+/******************************************
+/* NAVIGATION & HAMBURGER MENU
+/*******************************************/
+
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+
+
+
+/******************************************
+/* Projects
+/*******************************************/
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+
+
+
+/******************************************
+/* Button
+/*******************************************/
+
+
+
+/******************************************
+/* Media Query Manager
+/*******************************************/
+
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+*/
+
+/* 
+For Media queries the rem isn't equal to the root setup(ie:
+In our case 10px but instead browser default 16px
+Ems are the best option for media queries
+1em = 16 px; 
+*/
+
+
+
+
+
+/* 360px */
+@media only screen and (min-width: 22.5em) {}
+
+
+/* 480px */
+@media only screen and (min-width: 30em) {}
+
+/* 600px */
+@media only screen and (min-width: 37.5em) {}
+
+
+/* 736px */
+@media only screen and (min-width: 46em) {}
+
+
+/* 900px */
+@media only screen and (min-width: 56.25em) {}
+
+
+/* 1200px */
+@media only screen and (min-width: 68.75em) {}
+
+
+/* 1800 px */
+@media only screen and (min-width: 105em) {}
