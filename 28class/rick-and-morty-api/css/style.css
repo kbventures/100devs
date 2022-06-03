@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+*,
+*::after,
+*::before {
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+/******************************************
+/* UTILITIES
+/*******************************************/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root {
+	--green: green;
+	--black: #000000;
+	--white: #ffffff;
+	--metallic-silver-light: #dce3e9;
+	--metallic-silver: #bfc5ca;
+	--cool-grey: #969fa6;
+	--oslo-grey: #7F888F;
+	--grey: grey;
+	--mako: #3D4449;
+	--porcelain: #F5F6F7;
+	--anti-flash: #eff1f2;
+}
+
+html {
+	--3p75px: 0.2343rem;
+	--9p6px: 0.6rem;
+	--9p72px: 0.6075rem; 
+	--10px: 0.625rem;
+	--10p8px: 0.675rem;
+	--12px: 0.75rem;
+	--12p5px:0.78125rem; 
+	--13px: 0.8125rem;
+	--13p33px: 0.8331rem; 
+	--15px: 0.9375rem;
+	--16p66: 1.041rem;
+	--18px: 1.125rem;
+	--20px:1.25rem;
+	--23p33px: 1.45rem; 
+	--24px: 1.5rem;
+	--25px: 1.5625rem;
+	--26p66px: 1.66rem;
+	--30px: 1.875rem;
+	--36px: 2.25rem;
+	--43p33px: 2.7rem; 
+}
+
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+body,html{
+  height: 100%;
+}
+
+
+.hero-image{
+  background-image: url('../img/th.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.container {
+  display: flex; 
+  justify-content:center;
+  align-items: center; 
+  height: 100vh; 
+}
+
+
+.character-container{
+  display: flex; 
+  width: 37rem; 
+  height: 14rem;  
+  background-color: rgb(60,62,68);
+  color: white; 
+  border-radius: 0.5rem;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+
+  justify-content: space-between;
+}
+
+img {
+  margin: 0 0 0 0; 
+}
