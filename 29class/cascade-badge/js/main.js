@@ -9,3 +9,26 @@
 // [68, -1, 1, -7, 10, 10] => [-1, 10]
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+
+
+
+let temp1 = [1,2,3,"4","5"]
+
+
+
+
+function temp(tmp){
+
+    return tmp.reduce((e,i)=>{
+        // console.log(e)
+        // console.log(i)
+        return typeof i === 'Number' ? i + e : Number(i) + e 
+    },0)
+}
+
+
+
+
+const test = temp(temp1)
+
+console.log(test)

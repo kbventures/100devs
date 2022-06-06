@@ -1,9 +1,12 @@
 
 
-
+// There are 41 pages, 1 to 42
+// All pages have 20 characters except the last one(6)
 
 let currentId;
 let currentPage; 
+let currentArrayLength;
+
 
 // localStorage.clear()
 
@@ -27,15 +30,25 @@ previousOrNext.forEach(d => d.addEventListener('click', previousOrNextChoic))
 
 
 function previousOrNextChoic(event){
-  // console.log(event.target)
-  // console.log(event.target.id)
   if(event.target.id === 'right'){
-    console.log('right')
+    if(currentId !== currentArrayLength -1 ){
+      currentId++
+      getCharFromPage(currentId,currentPage)
+    } else if(currentPage !== 42) {
+      currentId = 0
+      currentPage++
+      getCharFromPage(currentId,currentPage)
+    }
  
   } else {
-    console.log('left')
+    // console.log('left')
     if(currentId !== 0){
-      console.log('do nothing')
+      currentId--
+      getCharFromPage(currentId,currentPage)
+    }else if(currentPage !== 1) {
+      currentId = currentArrayLength -1;
+      currentPage--
+      getCharFromPage(currentId,currentPage)
     }
   }
 }
@@ -48,6 +61,7 @@ function getCharFromPage(charNum,pageNum){
   fetch(url)
     .then(res=>res.json())
     .then(data=>{
+      currentArrayLength = data.results.length; 
       let currChar = data.results[charNum]; 
       document.querySelector('img').src = currChar.image
       document.querySelector('.name').innerText = currChar.name
@@ -60,7 +74,31 @@ function getCharFromPage(charNum,pageNum){
     })
 }
 
+
+
+
+function episode(){
+  let url = `https://rickandmortyapi.com/api/episode/1`;
+
+  fetch(url)
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data)
+      console.log(data.pages)
+      // document.querySelector('img').src = currChar.image
+      // document.querySelector('.name').innerText = currChar.name
+      // document.querySelector('.status').innerText = currChar.status
+      // document.querySelector('.species').innerText = currChar.species;
+      // document.querySelector('.location').innerText = currChar.location.name;
+    })
+    .catch(err=>{
+      console.log(err)
+    })
+}
+
 getCharFromPage(currentId,currentPage)
+
+episode()
 
 
 
