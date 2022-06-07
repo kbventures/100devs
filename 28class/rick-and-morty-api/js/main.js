@@ -5,104 +5,127 @@
 
 let currentId;
 let currentPage; 
-let currentArrayLength;
+let currentPageArray;
+let results = 
 
+localStorage.clear()
 
-// localStorage.clear()
 
 
 if(!localStorage.getItem('currentId')){
   localStorage.setItem('currentId',0)
   localStorage.setItem('currentPage',1)
   currentId = 0;
+  currentPage = 1; 
+  getArray();
 } else {
-  currentId = localStorage.getItem('currentId')
-  currentPage = localStorage.getItem('currentPage')
+  // currentId = localStorage.getItem('currentId')
+  // currentPage = localStorage.getItem('currentPage')
 }
 
 
 
 
- 
-const previousOrNext = document.querySelectorAll('i')
+function getArray() {
+  
+  let url = `https://rickandmortyapi.com/api/character/?page=${currentPage}`;
 
-previousOrNext.forEach(d => d.addEventListener('click', previousOrNextChoic))
+  fetch(url)
+    .then(res=>res.json())
+    .then(data=>{
+      // console.log(data)
+      currentPageArray = data; 
+      // console.log(currentPageArray)
+      updateCard(currentPageArray.results[currentId])
+    })
+    .catch(err=>{
+      console.log(err)
+    })
+
+}
+
+function updateCard(character){    
+      document.querySelector('img').src = character.image
+      document.querySelector('.name').innerText = character.name
+      document.querySelector('.status').innerText = character.status
+      document.querySelector('.species').innerText = character.species;
+      document.querySelector('.location').innerText = character.location.name;
+}
 
 
-function previousOrNextChoic(event){
-  if(event.target.id === 'right'){
-    if(currentId !== currentArrayLength -1 ){
-      currentId++
-      getCharFromPage(currentId,currentPage)
-    } else if(currentPage !== 42) {
-      currentId = 0
-      currentPage++
-      getCharFromPage(currentId,currentPage)
-    }
- 
+
+
+// Object.keys(myObj).length;
+
+document.getElementById('right').addEventListener('mousedown', ()=>{
+  
+  //  // here
+   console.log('Test 1 Currenty Id:', currentId)
+   console.log('Test 2 Current Page Array Results Length:',(Object.keys(currentPageArray.results).length))
+   let temp = (Object.keys(currentPageArray.results).length -1);
+
+  if(currentId < temp) {
+    console.log('Test 3: ',currentId)
+    console.log('Test 4:',currentPage)
+    currentId++
+    updateCard(currentPageArray.results[currentId])
+    console.log('card test')
+    console.log('test5')
+
+  } else if (currentPage <= 42) {
+     
+    console.log('test 6')
+      currentId = 0;
+     currentPage++
+     console.log(currentId, currentPage)
+     getArray()
   } else {
-    // console.log('left')
-    if(currentId !== 0){
-      currentId--
-      getCharFromPage(currentId,currentPage)
-    }else if(currentPage !== 1) {
-      currentId = currentArrayLength -1;
-      currentPage--
-      getCharFromPage(currentId,currentPage)
-    }
+    // nothing happens
   }
-}
-
-
-
-function getCharFromPage(charNum,pageNum){
-  let url = `https://rickandmortyapi.com/api/character/?page=${pageNum}`;
-
-  fetch(url)
-    .then(res=>res.json())
-    .then(data=>{
-      currentArrayLength = data.results.length; 
-      let currChar = data.results[charNum]; 
-      document.querySelector('img').src = currChar.image
-      document.querySelector('.name').innerText = currChar.name
-      document.querySelector('.status').innerText = currChar.status
-      document.querySelector('.species').innerText = currChar.species;
-      document.querySelector('.location').innerText = currChar.location.name;
-    })
-    .catch(err=>{
-      console.log(err)
-    })
-}
+})
 
 
 
 
-function episode(){
-  let url = `https://rickandmortyapi.com/api/episode/1`;
+// document.getElementById('left').addEventListener('mousedown', leftClick())
 
-  fetch(url)
-    .then(res=>res.json())
-    .then(data=>{
-      console.log(data)
-      console.log(data.pages)
-      // document.querySelector('img').src = currChar.image
-      // document.querySelector('.name').innerText = currChar.name
-      // document.querySelector('.status').innerText = currChar.status
-      // document.querySelector('.species').innerText = currChar.species;
-      // document.querySelector('.location').innerText = currChar.location.name;
-    })
-    .catch(err=>{
-      console.log(err)
-    })
-}
-
-getCharFromPage(currentId,currentPage)
-
-episode()
+// function rightClick() {
+//   console.log(currentPageArray)
+//   if(currentId !== updateCard(currentPageArray.length -1 )){
+//     currentId++
+//     updateCard(currentPageArray.results[currentId])
+//   } else if (currentPage === 42) {
+    
+//   }
+// }
 
 
 
-// https://css-tricks.com/css-only-carousel/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
