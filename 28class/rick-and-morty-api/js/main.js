@@ -47,7 +47,7 @@ function getArray() {
 function updateCard(character){    
       document.querySelector('img').src = character.image
       document.querySelector('.name').innerText = character.name
-      document.querySelector('.status').innerText = character.status
+      document.querySelector('.status').innerText = character.status + ":"
       document.querySelector('.species').innerText = character.species;
       document.querySelector('.location').innerText = character.location.name;
 }
