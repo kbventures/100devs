@@ -71,16 +71,54 @@ app.delete('/api/persons/:id',(request, response)=>{
 })
 
 
+
+
+const randomNumber = () => {
+    
+    return Math.floor(Math.random() * 1000000000);
+  }
+
+  const generateId = () => {
+    const maxId = persons.length > 0
+      ? Math.max(...persons.map(n => n.id))
+      : 0
+    return maxId + 1
+  }
+
 app.post('/api/persons',(request,response)=>{
 
-    const maxid = persons.length > 0 ? Math.max(...notes.map(n=>n.id)): 0; 
-    const person = request.body;
-    person.id = maxId +1;
-    persons = persons.concatt(person)
+    const body = request.body
+
+
+    let person = persons.find(pers => pers.name ==body.name);
+
+  
+    if (!body.name) {
+      return response.status(400).json({ 
+        error: 'name must be unique' 
+      })
+    }
+  
+    person = {
+      id: generateId(),
+      name: body.name,
+      number: randomNumber(),
+    }
+  
+    persons = persons.concat(person)
+  
     response.json(person)
-
-
 })
+
+
+
+
+
+
+
+
+
+
 
 
 const PORT = 3000; 
